@@ -65,14 +65,14 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="bg-gray-900/50 border border-gray-800/80 rounded-3xl p-6 flex flex-col justify-between hover:border-[#ff2a2a]/50 hover:shadow-[0_10px_30px_rgba(255,42,42,0.1)] transition-colors group">
+            <div key={project.id} className="bg-gray-900/50 border border-gray-800/80 rounded-3xl p-6 flex flex-col justify-between hover:border-gray-700 hover:bg-gray-900/70 transition-colors group">
               <div>
                 <div className="flex items-center justify-between gap-3 mb-4">
                   <div className="w-12 h-12 rounded-2xl bg-gray-800 border border-gray-700/80 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">{project.icon}</div>
                   <span className={`text-[10px] font-extrabold px-3 py-1 rounded-full border ${project.badgeColor}`}>{project.badge}</span>
                 </div>
                 <span className="text-[11px] font-bold text-[#ff2a2a] uppercase tracking-wider block mb-1">{project.subtitle}</span>
-                <h3 className="text-xl font-black text-white group-hover:text-[#ff2a2a] transition-colors mb-3">{project.title}</h3>
+                <h3 className="text-xl font-black text-white mb-3">{project.title}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed mb-6">{project.description}</p>
               </div>
               <div>
@@ -80,7 +80,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => <span key={tech} className="px-2.5 py-1 text-[10px] font-semibold rounded-md bg-white/5 border border-white/10 text-gray-300">{tech}</span>)}
                 </div>
                 <div className="flex items-center gap-3 pt-2">
-                  {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 px-3 rounded-full bg-[#ff2a2a] text-white font-bold text-xs text-center hover:bg-red-600 transition-colors">Live Demo ↗</a>}
+                  {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-2 px-3 rounded-full bg-[#ff2a2a] text-white font-bold text-xs text-center hover:bg-gray-700 transition-colors">Live Demo ↗</a>}
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className={`py-2 px-4 rounded-full bg-gray-800 border border-gray-700 text-white font-bold text-xs text-center hover:bg-white hover:text-black transition-all ${!project.liveUrl ? 'w-full' : ''}`}>GitHub ↗</a>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const Projects = () => {
           ))}
         </div>
         <div className="mt-16 text-center">
-          <a href="https://github.com/dkullayappa-8483" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-900/40 to-red-900/40 border border-purple-500/30 text-white font-bold text-sm hover:border-[#ff2a2a] transition-all duration-300 shadow-xl">Explore GitHub ↗</a>
+          <a href="https://github.com/dkullayappa-8483" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-900/40 to-red-900/40 border border-purple-500/30 text-white font-bold text-sm hover:border-gray-500 transition-colors shadow-xl">Explore GitHub ↗</a>
         </div>
       </div>
     </section>

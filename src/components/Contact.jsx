@@ -39,9 +39,9 @@ const Contact = () => {
           <h2 className="mb-5 text-4xl font-black md:text-5xl">Let’s build something useful.</h2>
           <p className="mb-8 max-w-md leading-relaxed text-slate-300">Have a project, opportunity, or idea in mind? Send a short note and I’ll get back to you.</p>
           <div className="space-y-3 text-sm">
-            <a href="mailto:dkullayappa848363@gmail.com" className="block text-slate-200 hover:text-[#ef5267]">dkullayappa848363@gmail.com</a>
-            <a href="tel:+919550148363" className="block text-slate-200 hover:text-[#ef5267]">+91 9550148363</a>
-            <a href="https://www.linkedin.com/in/dudekula-kullayappa-b39574339/" target="_blank" rel="noopener noreferrer" className="block text-slate-200 hover:text-[#ef5267]">LinkedIn ↗</a>
+            <a href="mailto:dkullayappa848363@gmail.com" className="block w-fit text-slate-200 hover:text-[#ef5267]">dkullayappa848363@gmail.com</a>
+            <a href="tel:+919550148363" className="block w-fit text-slate-200 hover:text-[#ef5267]">+91 9550148363</a>
+            <a href="https://www.linkedin.com/in/dudekula-kullayappa-b39574339/" target="_blank" rel="noopener noreferrer" className="block w-fit text-slate-200 hover:text-[#ef5267]">LinkedIn ↗</a>
           </div>
         </div>
         <form onSubmit={handleSubmit} className="rounded-3xl border border-white/10 bg-white/[.06] p-6 shadow-2xl md:p-8">
